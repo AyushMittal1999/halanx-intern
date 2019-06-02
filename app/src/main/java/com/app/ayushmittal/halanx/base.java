@@ -35,10 +35,7 @@ public class base extends AppCompatActivity {
             startActivity(i);
         }
 
-
     }
-
-
 
     private BottomNavigationView.OnNavigationItemSelectedListener mOnNavigationItemSelectedListener
             = new BottomNavigationView.OnNavigationItemSelectedListener() {
@@ -59,7 +56,7 @@ public class base extends AppCompatActivity {
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
 
-        if(item.getItemId()==R.id.logout) {
+        if(item.getItemId()==R.id.logout) {     ///logout option
             logout_helper log = new logout_helper(base.this);
             log.execute();
         }
