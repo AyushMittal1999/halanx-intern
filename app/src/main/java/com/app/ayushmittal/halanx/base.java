@@ -80,10 +80,10 @@ public class base extends AppCompatActivity  {
         }
         else {
             ((TextView)findViewById(R.id.bottom)).setText("WELCOME  "+sharedPreferences.getString("key","00"));
+            Toast.makeText(this,"Showing Results for Delhi",Toast.LENGTH_LONG).show();
 
         }
 
-        Toast.makeText(this,"Showing Results for Delhi",Toast.LENGTH_LONG).show();
 
         PlaceAutocompleteFragment autocompleteFragment = (PlaceAutocompleteFragment)
                 getFragmentManager().findFragmentById(R.id.place_autocomplete_fragment);
